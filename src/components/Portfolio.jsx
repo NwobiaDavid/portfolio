@@ -26,7 +26,7 @@ const portfolios=[
 
 
     return ( 
-        <div name='portfolio' className="bg-black text-white md:h-screen">
+        <div name='portfolio' className="bg-black text-white md:h-screen text-center md:text-left">
 
   <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
     <div className="pb-8 mt-20">
@@ -46,15 +46,16 @@ const portfolios=[
     portfolios.map(({id,src,link,code})=>(
 
 
-        <div key={id} className="shadow-md shadow-gray-500 rounded-lg hover:scale-105 duration-200">
+        <div key={id} className="shadow-md shadow-gray-500
+         rounded-lg hover:scale-105 duration-200 overflow-hidden ">
 
-            <img src={src} alt=""  className="rounded-t"/>
-            <div className="flex item-center justify-center rounded-b bg-transparent">
+            <img src={src} alt=""  className="rounded-t "/>
+            <div className="flex item-center justify-center rounded-b bg-transparent ">
 
                 <a href={code} target="_blank"  rel="noreferrer" className="w-1/2 text-white hover:font-bold  hover:text-blue-500 px-6 py-3 m-5 duration-200 
                 hover:scale-105"> Code  </a>
 
-                <a href={link} target="_blank"  rel="noreferrer" className="w-1/2 px-6  text-white hover:font-bold hover:text-blue-500 py-3 m-5 ml-20 duration-200
+                <a href={link} target="_blank"  rel="noreferrer" className="w-1/2  px-6  text-white hover:font-bold hover:text-blue-500 py-3 m-5 duration-200
                 hover:scale-105"> Demo </a>
 
             </div>

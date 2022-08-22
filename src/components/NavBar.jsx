@@ -32,7 +32,7 @@ const NavBar = () => {
 
     return ( 
         
-        <div className='flex justify-between items-center h-20 w-full
+        <div className='flex justify-between items-center h-20 w-fill
          text-white px-4  bg-black'>
            <div>
             <h1 className='text-5xl font-signature ml-2'>大<span className='text-red-500'>衛</span></h1>
@@ -62,7 +62,7 @@ const NavBar = () => {
             
 
             <ul className='flex flex-col justify-center items-center absolute top-0 
-            w-full left-0 h-screen bg-black'>
+            w-screen left-0 h-screen bg-black'>
 
                 {Links.map(({id, link})=>(
                     <li key={id} className='px-4 cursor-pointer 
