@@ -16,11 +16,9 @@ const Home = () => {
                     i'm a <span className="text-blue-500">front-<span className="text-red-500">end</span> developer</span>
                 </h2>
                 <p className="text-gray-500 py-4 max-w-md text-center md:text-left">
-                    Lorem ipsum dolor sit amet consectetur
-                     adipisicing elit. Veritatis illo distinctio
-                      magni cupiditate quam dolorem, mollitia ut 
-                      consectetur repellendus harum? Nisi id eligendi libero 
-                      quasi modi fugiat similique minus aliquid.
+                My name is Nwobia David Uchechi, i am currently a student of covenant
+                    university. i am a front-end developer that is currently in the process of
+                    learning back-end development.
                 </p>
                 <div>
                     <Link to="portfolio" smooth duration={500} 

@@ -9,18 +9,20 @@ const About = () => {
                 </div>
 
                 <p className="text-xl mt-20">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora similique non id neque dolorum, esse sapiente est,
-                    adipisci tenetur saepe placeat dolorem officiis modi quibusdam voluptas voluptatibus! Suscipit nulla
-                    quidem nam deleniti voluptatum quasi totam quibusdam, repellendus ab accusantium inventore enim labore numquam
-                    non a iste corrupti voluptate? Qui, aut!
+                I am flexible, reliable and possess excellent time keeping skills,
+                I am an enthusiastic, self-motivated, reliable, responsible
+                 and hard working person and I am a mature team worker 
+                 and adaptable to all challenging situations. 
+
                 </p>
                 <br />
                 <p className="text-xl">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam porro, voluptatum nesciunt amet, rerum tenetur
-                    dolorem magnam nisi rem iure dicta libero reprehenderit culpa fugiat? Dolorum incidunt at facilis odit possimus
-                     recusandae placeat obcaecati ea? Id dolore provident qui reprehenderit possimus harum placeat quae, nobis fugiat explicabo omnis.
-                     Quia odio ducimus explicabo
-                     nulla neque veritatis ea adipisci fugit, sapiente voluptates!
+               
+
+                 I am a talented, ambitious and hardworking individual, with broad skills and experience in digital marketing, social media and leading projects.
+Furthermore, I am adept at handling multiple tasks on a daily basis competently and at working well under pressure.
+
+A key strength is communication; building strong relationships with people in order to deliver the best results.
                 </p>
             </div>
         </div>
