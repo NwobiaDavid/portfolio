@@ -1,6 +1,7 @@
 import React from "react";
 import metaLogin from '../assets/portfolio/metaLogin.PNG'
 import todoApp from '../assets/portfolio/todoApp.PNG'
+import imageGallery from "../assets/portfolio/IMGG.png";
 
 
 
@@ -19,6 +20,13 @@ const portfolios=[
         src: todoApp,
         link:'https://onlineto-doapp.netlify.app/',
         code:'https://github.com/NwobiaDavid/todo_app'
+    },
+    {
+        id:3,
+        src: imageGallery,
+        link: 'https://aesthetic-boba-50acb6.netlify.app/',
+        code:'https://github.com/NwobiaDavid/image-gallery'
+        
     }
 
 ]
