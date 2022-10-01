@@ -64,7 +64,7 @@ const techs=[
 
 
     return ( 
-        <div name='experience' className="bg-black w-full 
+        <div name='experience' className=" bg-gray-900 w-full 
          h-full text-center md:h-screen md:text-left">
 
         <div className="max-w-screen-lg mx-auto p-4 flex

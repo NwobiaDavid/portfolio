@@ -34,7 +34,7 @@ const portfolios=[
 
 
     return ( 
-        <div name='portfolio' className="bg-black text-white md:h-screen text-center md:text-left">
+        <div name='portfolio' className=" bg-gray-900 text-white md:h-screen text-center md:text-left">
 
   <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
     <div className="pb-8 mt-20">
