@@ -7,6 +7,12 @@ import tailwind from "../assets/tailwind.png";
 import github from "../assets/github.png";
 import nextjs from "../assets/nextjs.png";
 import git from "../assets/git.png";
+import ejs from "../assets/ejs.png"
+import bootstrap from "../assets/bootstrap.png"
+import jquery from "../assets/jquery.png"
+import node from "../assets/node better.png"
+import mongo from "../assets/MongoDB-removebg-preview.png"
+
 
 const Experience = () => {
 
@@ -43,9 +49,9 @@ const techs=[
     },
     {
         id:6,
-        src: nextjs,
-        title:'Next js',
-        style:'shadow-white'
+        src: node,
+        title:'Node js',
+        style:'shadow-green-400'
     },
     {
         id:7,
@@ -58,6 +64,26 @@ const techs=[
         src: git,
         title:'git',
         style:'shadow-orange-700'
+    },{
+        id:9,
+        src: ejs,
+        title:'ejs',
+        style:'shadow-lime-700'
+    },{
+        id:10,
+        src: jquery,
+        title:'jquery',
+        style:'shadow-blue-300'
+    },{
+        id:11,
+        src: bootstrap,
+        title:'bootstrap',
+        style:'shadow-indigo-500'
+    },{
+        id:12,
+        src: mongo,
+        title:'Mongo DB',
+        style:'shadow-green-500'
     }
 
 ]
@@ -65,7 +91,7 @@ const techs=[
 
     return ( 
         <div name='experience' className=" bg-gray-900 w-full 
-         h-full text-center md:h-screen md:text-left">
+         h-full my-48 text-center md:h-screen md:text-left">
 
         <div className="max-w-screen-lg mx-auto p-4 flex
     flex-col justify-center w-full h-full text-white">

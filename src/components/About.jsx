@@ -12,7 +12,7 @@ const About = () => {
                 I am flexible, reliable and possess excellent time keeping skills,
                 I am an enthusiastic, self-motivated, reliable, responsible
                  and hard working person and I am a mature team worker 
-                 and adaptable to all challenging situations. 
+                 and adaptable to all challenging situations.
 
                 </p>
                 <br />

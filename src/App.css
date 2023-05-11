@@ -1,0 +1,81 @@
+.loading-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loading-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  
+  .typing-indicator {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+  }
+  
+  .typing-indicator:before,
+  .typing-indicator:after,
+  .typing-indicator > div:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 28px;
+    width: 4px;
+    height: 16px;
+    border-radius: 4px;
+    background: #fff;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .typing-indicator:before {
+    left: -8px;
+    animation-delay: -0.32s;
+  }
+  
+  .typing-indicator:after {
+    left: 8px;
+    animation-delay: -0.16s;
+  }
+  
+  .typing-indicator > div:before {
+    left: -24px;
+    animation-delay: 0;
+  }
+  
+  @keyframes typing {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .typing-indicator:before,
+  .typing-indicator:after {
+    animation-name: typing;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  .typing-indicator > div:before {
+    animation-name: typing;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+  }
+  

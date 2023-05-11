@@ -1,7 +1,11 @@
 import React from "react";
 import metaLogin from '../assets/portfolio/metaLogin.PNG'
 import todoApp from '../assets/portfolio/todoApp.PNG'
-import imageGallery from "../assets/portfolio/IMGG.png";
+import imageGallery from "../assets/portfolio/image-search.png"
+import simon from "../assets/portfolio/Simon.png"
+import dicee from "../assets/portfolio/Dicee.png"
+import Notebook from "../assets/portfolio/NoteBook.png"
+import Secrets from "../assets/portfolio/Secrets.png"
 
 
 
@@ -10,16 +14,16 @@ const Portfolio = () => {
 const portfolios=[
     {
         id:1,
-        src: metaLogin,
-        link: 'https://meta112233.netlify.app/',
-        code:'https://github.com/NwobiaDavid/meta_login'
+        src: Notebook,
+        link: 'https://notebook-nglu.onrender.com/',
+        code:'https://github.com/NwobiaDavid/notebook'
         
     },
     {
         id:2,
-        src: todoApp,
-        link:'https://onlineto-doapp.netlify.app/',
-        code:'https://github.com/NwobiaDavid/todo_app'
+        src: Secrets,
+        link:'https://secret-fkvw.onrender.com/',
+        code:'https://github.com/NwobiaDavid/secret'
     },
     {
         id:3,
@@ -34,9 +38,9 @@ const portfolios=[
 
 
     return ( 
-        <div name='portfolio' className=" bg-gray-900 text-white md:h-screen text-center md:text-left">
+        <div name='portfolio' className=" bg-gray-900 text-white md:h-screen text-center md:text-left my-20">
 
-  <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+  <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full  min-h-screen">
     <div className="pb-8 mt-20">
         <p className="text-4xl font-bold inline border-b-4
         border-gray-500 ">Port<span className="text-red-500">folio</span></p>
