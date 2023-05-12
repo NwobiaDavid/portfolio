@@ -2,6 +2,7 @@ import React from 'react';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail} from "react-icons/hi";
 import { BsFillPersonLinesFill} from "react-icons/bs";
+import resume from "../assets/Resume_2.pdf"
 
 const SocialLinks = () => {
 
@@ -45,7 +46,7 @@ const Links =[
             <>  Resume  < BsFillPersonLinesFill  size={30}/>  </>    
 
         ),
-        // href:'https://wow.com',
+        href:resume,
         style: 'rounded-br-md',
         download:true,
 

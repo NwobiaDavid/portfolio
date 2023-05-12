@@ -6,17 +6,18 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
-import Particles from 'react-particles-js';
 import './App.css';
 
 function App() {
+  // State for loading status
   const [isLoading, setIsLoading] = useState(true);
 
+  // State for mouse position
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
+  // Effect to update mouse position when mouse moves
   useEffect(() => {
-    const handleMouseMove = (event) => {
-      const { clientX, clientY } = event;
+    const handleMouseMove = ({ clientX, clientY }) => {
       setMousePosition({ x: clientX, y: clientY });
     };
 
@@ -27,56 +28,25 @@ function App() {
     };
   }, []);
 
+  // Style for mouse element
   const mouseStyle = {
-    position: 'absolute',
     top: mousePosition.y,
     left: mousePosition.x,
-    width: '30px',
-    height: '30px',
-    borderRadius: '50%',
-    backgroundColor: '#fff',
-    zIndex: 9999,
-    pointerEvents: 'none',
-    transform: 'translate(-50%, -50%)',
-    boxShadow: '0 0 10px rgba(0, 0, 0, 0.3)',
   };
 
+  // Effect to set loading status to false after a delay
   useEffect(() => {
-    setTimeout(() => {
+    const loadingDelay = 3000;
+
+    const timeoutId = setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // simulate a 2-second loading delay
+    }, loadingDelay);
+
+    return () => clearTimeout(timeoutId);
   }, []);
 
   return (
-    <div className="App  bg-gray-900">
-      <Particles
-        params={{
-          particles: {
-            number: {
-              value: 50,
-            },
-            size: {
-              value: 3,
-            },
-            color: {
-              value: '#ffffff',
-            },
-            line_linked: {
-              color: {
-                value: '#ffffff',
-              },
-            },
-          },
-        }}
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          zIndex: -1,
-        }}
-      />
+    <div className="App bg-gray-900">
       {isLoading ? (
         <div className="loading-container">
           <p className="loading-text">Programmer, Artist & Writer</p>
@@ -93,7 +63,7 @@ function App() {
           <SocialLinks />
         </>
       )}
-      <div style={mouseStyle}></div>
+      <div className="mouse" style={mouseStyle}></div>
     </div>
   );
 }
