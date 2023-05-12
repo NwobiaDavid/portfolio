@@ -21,7 +21,7 @@ const Home = () => {
                                 " writer",
                                 " digital artist",
                             ]}
-                            typeSpeed={50}
+                            typeSpeed={30}
                             backSpeed={50}
                             loop={true}
                             cursorChar="|"
