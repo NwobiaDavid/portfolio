@@ -53,13 +53,13 @@ const Links =[
 ]
 
   return (
-    <div className='flex w-screen lg:hidden justify-center overflow-x-hidden  bg-red-500 items-center'>
+    <div className='grid grid-cols-2 p-2 w-screen lg:hidden flex-col justify-start items-start overflow-x-hidden gap-3 bg-red-500 '>
         {Links.map(({id, child,href, download})=>(
      <div  key={id} 
-     className={'flex justify-between items-center py-1 hover:font-bold px-3 md:ml-5 hover:rounded-md duration-200'}
+     className={'flex justify-between items-center py-2 border hover:bg-white text-white hover:text-black border-white hover:font-bold px-3 md:ml-5 hover:rounded-md duration-200'}
      > 
         <a href={href}
-        className='flex justify-between items-center w-full text-white' 
+        className='flex justify-between items-center w-full ' 
          download ={download}
          target="_blank"
          rel="noreferrer"

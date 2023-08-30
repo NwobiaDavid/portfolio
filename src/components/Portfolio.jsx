@@ -28,7 +28,7 @@ const PortfolioItem = ({ id, src, link, code, name , stack}) => {
         <img
           src={src}
           alt="project_image"
-          className="rounded-tl h-[200px] flex justify-center"
+          className="rounded-tl h-[150px] flex justify-center"
         />
         <div className="flex item-center justify-center rounded-b bg-transparent">
           <a
@@ -106,7 +106,7 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className=" bg-gray-900 lg:px-[10%] w-screen overflow-hidden text-white h-[1020px] text-center md:text-left "
+      className=" bg-gray-900 lg:px-[10%] w-screen overflow-hidden text-white md:h-[1020px] text-center md:text-left "
     >
       <div className=" p-4 flex lg:flex-row flex-col justify-center ">
       
@@ -117,7 +117,7 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my works right here :</p>
         </div>
 
-        <div className="grid w-full sm:grid-cols-2 md:grid-cols-3 gap-5 px-12 sm:px-0">
+        <div className="grid w-full sm:grid-cols-2 md:grid-cols-3 gap-5 md:px-12 sm:px-0">
           {portfolios.map(({ id, src, link, code, name , stack}) => (
             <PortfolioItem key={id} name={name} id={id} stack={stack} src={src} link={link} code={code} />
           ))}
