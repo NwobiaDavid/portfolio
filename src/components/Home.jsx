@@ -8,9 +8,9 @@ const Home = () => {
 
 
     return (
-        <div name="home" className="h-full w-full bg-gray-900 md:h-screen">
+        <div name="home" className="h-[720px] w-full bg-gray-900 ">
             <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row ">
-                <div className="flex flex-col lg:w-[60%] justify-center h-full md:items-start items-center">
+                <div className="flex flex-col lg:w-[70%] justify-center h-full md:items-start items-center">
                     <h2 className="text-4xl md:text-left text-center sm:text-7xl font-bold text-white">
                         <span>i'm a </span>
                         <Typed
@@ -21,7 +21,7 @@ const Home = () => {
                                 " writer",
                                 " digital artist",
                             ]}
-                            typeSpeed={30}
+                            typeSpeed={20}
                             backSpeed={50}
                             loop={true}
                             cursorChar="|"

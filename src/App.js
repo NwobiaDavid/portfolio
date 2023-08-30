@@ -46,7 +46,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App bg-gray-900">
+    <div className="App overflow-x-hidden bg-gray-900">
       {isLoading ? (
         <div className="loading-container">
           <p className="loading-text">Programmer, Artist & Writer</p>

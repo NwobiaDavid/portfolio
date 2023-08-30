@@ -90,18 +90,15 @@ const techs=[
 
 
     return ( 
-        <div name='experience' className=" bg-gray-900 w-full 
-         h-full my-48 text-center md:h-screen md:text-left">
+        <div name='experience' className=" bg-gray-900 h-[720px] text-center  md:text-left">
 
-        <div className="max-w-screen-lg mx-auto p-4 flex
-    flex-col justify-center w-full h-full text-white">
-    <div>
-        <p className="text-4xl font-bold border-b-4
-         border-gray-500 p-2 inline"><span className="text-red-500">Ex</span>perience</p>
+        <div className=" p-4 flex lg:flex-row flex-col px-[10%] justify-center  text-white">
+    <div className="lg:w-[50%] flex flex-col items-center mt-20">
+        <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline"><span className="text-red-500">Ex</span>perience</p>
         <p className="py-6">These are the technologies i've worked with :</p>
     </div>
-    <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 
-    text-center py-8 px-12 sm:px-0">
+
+    <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
 
 
             {
