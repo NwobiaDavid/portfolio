@@ -89,16 +89,16 @@ const Portfolio = () => {
       id: 4,
       src: ReactNat,
       name: "Job App",
-      link: 'https://aesthetic-boba-50acb6.netlify.app/',
-      code: 'https://github.com/NwobiaDavid/image-gallery',
+      link: 'https://github.com/NwobiaDavid/reactNativeJobApp',
+      code: 'https://github.com/NwobiaDavid/reactNativeJobApp',
       stack: "React native, CSS"
     },
     {
       id: 5,
       src: DailyMart,
       name: "Daily Mart",
-      link: 'https://aesthetic-boba-50acb6.netlify.app/',
-      code: 'https://github.com/NwobiaDavid/image-gallery',
+      link: 'https://github.com/NwobiaDavid/DailyMart',
+      code: 'https://github.com/NwobiaDavid/DailyMart',
       stack: "React, Bootstrap, Tailwind CSS, Mongo DB, Node JS, Express"
     },
   ];
