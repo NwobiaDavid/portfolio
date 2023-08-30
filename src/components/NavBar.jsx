@@ -32,7 +32,7 @@ const NavBar = () => {
 
     return ( 
         
-        <div className='flex justify-between fixed items-center h-16 md:h-20 md:w-[90vw] w-screen py-1 z-10 rounded-full md:m-2 md:border md:border-gray-100 text-white px-4  bg-slate-900'>
+        <div className='flex justify-between fixed items-center h-16 md:h-20 md:w-[90vw] w-screen py-1 z-10 md:rounded-full md:m-2 md:border md:border-gray-100 text-white px-4  bg-slate-900'>
            <div>
             <h1 className=' text-4xl md:text-5xl font-signature ml-2'>大<span className='text-red-500'>衛</span></h1>
            </div>

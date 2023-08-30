@@ -8,10 +8,10 @@ const Home = () => {
 
 
     return (
-        <div name="home" className="h-[720px] w-full mt-10 md:mt-0 bg-gray-900 ">
-            <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row ">
-                <div className="flex flex-col lg:w-[70%] justify-center h-full md:items-start items-center">
-                    <h2 className="text-4xl h-[20%] md:text-left text-center sm:text-7xl font-bold text-white">
+        <div name="home" className="h-[720px] w-full mt-10 lg:mt-0 bg-gray-900 ">
+            <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 lg:flex-row ">
+                <div className="flex flex-col lg:w-[70%] justify-center h-full lg:items-start items-center">
+                    <h2 className="text-4xl h-[20%] lg:text-left text-center lg:text-7xl font-bold text-white">
                         <span>i'm a </span>
                         <Typed
                             strings={[
@@ -27,7 +27,7 @@ const Home = () => {
                             cursorChar="|"
                         />
                     </h2>
-                    <p className="text-gray-500  py-4 max-w-md text-center md:text-left">
+                    <p className="text-gray-500  py-4 max-w-md text-center lg:text-left">
                         My name is Nwobia David Uchechi and i am currently a student of
                         covenant university studying physics.
                     </p>
@@ -50,7 +50,7 @@ const Home = () => {
                     <img
                         src={ProfilePic}
                         alt="my profile"
-                        className="rounded-2xl mx-auto w-2/3 md:w-full"
+                        className="rounded-2xl mx-auto w-2/3 lg:w-full"
                     />
                 </div>
 
