@@ -5,7 +5,7 @@ import Secrets from '../assets/portfolio/Secrets.png';
 import ReactNat from '../assets/portfolio/react-native.png';
 import DailyMart from '../assets/portfolio/daily-mart.PNG';
 
-const PortfolioItem = ({ id, src, link, code }) => {
+const PortfolioItem = ({ id, src, link, code, name , stack}) => {
   const [hover, setHover] = useState(false);
 
   const hoverEffect = () => {
@@ -18,11 +18,13 @@ const PortfolioItem = ({ id, src, link, code }) => {
 
   return (
     <div
-      className="shadow-md shadow-gray-500 flex rounded-lg transition-transform transform hover:scale-105 duration-300 ease-in-out overflow-hidden"
+      className={`shadow-md shadow-gray-500 flex flex-col rounded-lg transition-transform transform hover:scale-105 duration-300 ease-in-out overflow-hidden relative`}
       onMouseEnter={hoverEffect}
       onMouseLeave={hoverOut}
     >
+    <h1 className='text-2xl p-2'>{name}</h1>
       <div className="flex flex-col w-full justify-center">
+      
         <img
           src={src}
           alt="project_image"
@@ -47,10 +49,10 @@ const PortfolioItem = ({ id, src, link, code }) => {
           </a>
         </div>
       </div>
-      
+
       {hover && (
-        <div className="text-white">
-          <h2>{id}</h2>
+        <div className="text-white p-3 lg:w-full h-[60%] absolute top-[14%] left-0 bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50">
+          <h2 className='text-2xl'><span className='text-red-500 font-bold'>Tech Stack:</span> {stack}</h2>
         </div>
       )}
     </div>
@@ -62,32 +64,42 @@ const Portfolio = () => {
     {
       id: 1,
       src: Notebook,
+      name: "NoteBook",
       link: 'https://notebook-nglu.onrender.com/',
       code: 'https://github.com/NwobiaDavid/notebook',
+     stack: "HTML, CSS, EJS, Mongo DB, Node JS, Express"
     },
     {
       id: 2,
       src: Secrets,
+      name: "Secrets",
       link: 'https://secret-fkvw.onrender.com/',
       code: 'https://github.com/NwobiaDavid/secret',
+      stack: "HTML, CSS, EJS, Mongo DB, Node JS, Express"
     },
     {
       id: 3,
       src: imageGallery,
+      name: "React ImageGallery",
       link: 'https://aesthetic-boba-50acb6.netlify.app/',
       code: 'https://github.com/NwobiaDavid/image-gallery',
+      stack: "React, Pixabay API"
     },
     {
       id: 4,
       src: ReactNat,
+      name: "Job App",
       link: 'https://aesthetic-boba-50acb6.netlify.app/',
       code: 'https://github.com/NwobiaDavid/image-gallery',
+      stack: "React native, CSS"
     },
     {
       id: 5,
       src: DailyMart,
+      name: "Daily Mart",
       link: 'https://aesthetic-boba-50acb6.netlify.app/',
       code: 'https://github.com/NwobiaDavid/image-gallery',
+      stack: "React, Bootstrap, Tailwind CSS, Mongo DB, Node JS, Express"
     },
   ];
 
@@ -97,6 +109,7 @@ const Portfolio = () => {
       className=" bg-gray-900 lg:px-[10%] w-screen overflow-hidden text-white h-[1020px] text-center md:text-left "
     >
       <div className=" p-4 flex lg:flex-row flex-col justify-center ">
+      
         <div className="pb-8 lg:w-[50%] flex items-center flex-col mt-20">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500 ">
             Port<span className="text-red-500">folio</span>
@@ -104,11 +117,12 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my works right here :</p>
         </div>
 
-        <div className="grid w-full sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, link, code }) => (
-            <PortfolioItem key={id} id={id} src={src} link={link} code={code} />
+        <div className="grid w-full sm:grid-cols-2 md:grid-cols-3 gap-5 px-12 sm:px-0">
+          {portfolios.map(({ id, src, link, code, name , stack}) => (
+            <PortfolioItem key={id} name={name} id={id} stack={stack} src={src} link={link} code={code} />
           ))}
         </div>
+
       </div>
     </div>
   );

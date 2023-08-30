@@ -11,7 +11,7 @@ const Home = () => {
         <div name="home" className="h-[720px] w-full bg-gray-900 ">
             <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row ">
                 <div className="flex flex-col lg:w-[70%] justify-center h-full md:items-start items-center">
-                    <h2 className="text-4xl md:text-left text-center sm:text-7xl font-bold text-white">
+                    <h2 className="text-4xl h-[20%] md:text-left text-center sm:text-7xl font-bold text-white">
                         <span>i'm a </span>
                         <Typed
                             strings={[
