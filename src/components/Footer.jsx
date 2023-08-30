@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail} from "react-icons/hi";
 import { BsFillPersonLinesFill} from "react-icons/bs";
 import resume from "../assets/Resume_2.pdf"
 
-const SocialLinks = () => {
-
+export default function Footer() {
+    
 const Links =[
     {
         id:1,
@@ -13,7 +13,7 @@ const Links =[
             <>  LinkedIn  < FaLinkedin  size={30}/>  </>    
         ),
         href:'https://www.linkedin.com/in/nwobia-david-a17693237/',
-        style:'rounded-tr-md'
+       
 
     },
     {
@@ -45,26 +45,21 @@ const Links =[
 
         ),
         href:resume,
-        style: 'rounded-br-md',
+       
         download:true,
 
     }
 
 ]
 
-    return ( 
-
-        <div className='hidden lg:flex flex-col top-[35%] left-0 fixed'>
-  <ul>
-
-  {Links.map(({id, child,href, style, download})=>(
-     <li  key={id} 
-     className={'flex justify-between items-center w-40 h-14 px-4 ml-[-100px] bg-blue-500 hover:ml-[-10px] hover:rounded-md duration-700 hover:bg-red-500' + 
-     " " + style}
+  return (
+    <div className='flex w-screen lg:hidden justify-center overflow-x-hidden  bg-red-500 items-center'>
+        {Links.map(({id, child,href, download})=>(
+     <div  key={id} 
+     className={'flex justify-between items-center py-1 hover:font-bold px-3 md:ml-5 hover:rounded-md duration-200'}
      > 
         <a href={href}
-        className='flex justify-between items-center
-         w-full text-white' 
+        className='flex justify-between items-center w-full text-white' 
          download ={download}
          target="_blank"
          rel="noreferrer"
@@ -72,14 +67,9 @@ const Links =[
 
            {child}
         </a>
-    </li>
+    </div>
 )
 )}
-
-   
-  </ul>
-        </div>
-     );
+    </div>
+  )
 }
- 
-export default SocialLinks;

@@ -7,6 +7,7 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   // State for loading status
@@ -54,12 +55,15 @@ function App() {
         </div>
       ) : (
         <>
-          <NavBar />
+          <div className='flex justify-center'>
+            <NavBar />
+          </div>
           <Home />
           <About />
           <Portfolio />
           <Experience />
           <Contact />
+          <Footer />
           <SocialLinks />
         </>
       )}
