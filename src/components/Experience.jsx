@@ -12,6 +12,8 @@ import bootstrap from "../assets/bootstrap.png"
 import jquery from "../assets/jquery.png"
 import node from "../assets/node better.png"
 import mongo from "../assets/MongoDB-removebg-preview.png"
+import typescript from "../assets/Typescript.png"
+import reactnat from "../assets/reactnative.png"
 
 
 const Experience = () => {
@@ -36,9 +38,21 @@ const techs=[
         style:'shadow-yellow-500'
     },
     {
+        id:13,
+        src: typescript,
+        title:'TypeScript',
+        style:'shadow-blue-500'
+    },
+    {
         id:4,
         title:'React',
         src:reactImage,
+        style:'shadow-blue-600'
+    },
+    {
+        id:14,
+        src: reactnat,
+        title:'React Native',
         style:'shadow-blue-600'
     },
     {
@@ -90,7 +104,7 @@ const techs=[
 
 
     return ( 
-        <div name='experience' className=" bg-gray-900 lg:h-[720px] mb-10 md:mb-auto text-center  md:text-left">
+        <div name='experience' className=" bg-gray-900 lg:h-[720px] mb-10 md:mb-20 text-center  md:text-left">
 
         <div className=" p-4 flex lg:flex-row flex-col px-[10%] justify-center  text-white">
     <div className="lg:w-[50%] flex flex-col items-center mt-20">
@@ -98,7 +112,7 @@ const techs=[
         <p className="py-6">These are the technologies i've worked with :</p>
     </div>
 
-    <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+    <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 md:px-12 sm:px-0">
 
 
             {
@@ -106,7 +120,7 @@ const techs=[
                 <div key={id} className={`shadow-md hover:scale-105 duration-500 
                   py-2 rounded-lg ${style}`}>
                             <img src={src} alt="" className="w-20 mx-auto" />
-                            <p className="mt-4">{title}</p>
+                            <p className="mt-4 text-sm md:text-lg">{title}</p>
                         </div>
 
                 ))
