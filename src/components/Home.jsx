@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ProfilePic from "../assets/profilepic.png";
+import ProfilePic from "../assets/profilepic.webp";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import imageGallery from '../assets/portfolio/image-search.png';
-import Notebook from '../assets/portfolio/NoteBook.png';
-import Secrets from '../assets/portfolio/Secrets.png';
-import ReactNat from '../assets/portfolio/react-native.png';
-import DailyMart from '../assets/portfolio/daily-mart.PNG';
+import imageGallery from '../assets/portfolio/image-search.webp';
+import Notebook from '../assets/portfolio/NoteBook.webp';
+import Secrets from '../assets/portfolio/Secrets.webp';
+import ReactNat from '../assets/portfolio/react-native.webp';
+import DailyMart from '../assets/portfolio/daily-mart.webp';
 
 const PortfolioItem = ({ id, src, link, code, name , stack}) => {
   const [hover, setHover] = useState(false);

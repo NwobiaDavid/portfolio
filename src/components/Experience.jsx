@@ -1,19 +1,18 @@
 import React from "react";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import javascript from "../assets/javascript.png";
-import reactImage from "../assets/react.png";
-import tailwind from "../assets/tailwind.png";
-import github from "../assets/github.png";
-import nextjs from "../assets/nextjs.png";
-import git from "../assets/git.png";
-import ejs from "../assets/ejs.png"
-import bootstrap from "../assets/bootstrap.png"
-import jquery from "../assets/jquery.png"
-import node from "../assets/node better.png"
-import mongo from "../assets/MongoDB-removebg-preview.png"
-import typescript from "../assets/Typescript.png"
-import reactnat from "../assets/reactnative.png"
+import html from "../assets/html.webp";
+import css from "../assets/css.webp";
+import javascript from "../assets/javascript.webp";
+import reactImage from "../assets/react.webp";
+import tailwind from "../assets/tailwind.webp";
+import github from "../assets/github.webp";
+import git from "../assets/git.webp";
+import ejs from "../assets/ejs.webp"
+import bootstrap from "../assets/bootstrap.webp"
+import jquery from "../assets/jquery.webp"
+import node from "../assets/node-better.webp"
+import mongo from "../assets/MongoDB-removebg-preview.webp"
+import typescript from "../assets/Typescript.webp"
+import reactnat from "../assets/reactnative.webp"
 
 
 const Experience = () => {
