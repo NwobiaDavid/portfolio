@@ -2,7 +2,7 @@ import React from 'react'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail} from "react-icons/hi";
 import { BsFillPersonLinesFill} from "react-icons/bs";
-import resume from "../assets/Resume_2.pdf"
+import resume from "../assets/resume.pdf"
 
 export default function Footer() {
     
