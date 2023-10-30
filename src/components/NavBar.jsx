@@ -32,7 +32,7 @@ const NavBar = () => {
 
     return ( 
         
-        <div className='flex w-screen md:w-fit md:rounded-b-xl md:border-b-2 md:border-x-2 justify-end md:justify-center fixed items-center h-16 md:h-20 py-1 z-10 text-white px-4  bg-slate-900'>
+        <div className='flex w-screen md:w-fit  md:rounded-b-xl border-red-500 md:border-b-2 md:border-x-2 justify-end md:justify-center fixed items-center h-16 md:h-20 py-1 z-10 text-white px-4  bg-black '>
 
             <ul className='hidden md:flex p-4  '>
 

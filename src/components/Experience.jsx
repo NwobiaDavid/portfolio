@@ -103,7 +103,7 @@ const techs=[
 
 
     return ( 
-        <div name='experience' className=" bg-gray-900 lg:h-[720px] mb-10 md:mb-20 text-center  md:text-left">
+        <div name='experience' className=" bg-gray-900  mb-10 md:mb-20 text-center  md:text-left">
 
         <div className=" p-4 flex lg:flex-row flex-col px-[10%] justify-center  text-white">
     <div className="lg:w-[50%] flex flex-col items-center mt-20">
