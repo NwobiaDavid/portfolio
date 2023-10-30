@@ -5,7 +5,7 @@ import Secrets from '../assets/portfolio/Secrets.webp';
 import ReactNat from '../assets/portfolio/react-native.webp';
 import DailyMart from '../assets/portfolio/daily-mart.webp';
 
-const PortfolioItem = ({ id, src, link, code, name, stack }) => {
+const PortfolioItem = ({ id, src, link, code, name, stack, desc }) => {
   const [hover, setHover] = useState(false);
 
   const hoverEffect = () => {
@@ -36,7 +36,7 @@ const PortfolioItem = ({ id, src, link, code, name, stack }) => {
           <div className="md:w-[40%] bg-black pt-2 md:pt-0 md:pl-2">
             <div className='mb-1'>
               <h3 className='text-red-500 '>Description</h3>
-              <p className="text-sm opacity-90" >this is the description, not more than 20 words</p>
+              <p className="text-sm opacity-90" >{desc}</p>
             </div>
             <span className='text-red-500 '>Tech stack: <span className="text-sm text-white opacity-90">{stack}</span></span>
           </div>
@@ -99,7 +99,8 @@ const Portfolio = () => {
       name: 'React ImageGallery',
       link: 'https://aesthetic-boba-50acb6.netlify.app/',
       code: 'https://github.com/NwobiaDavid/image-gallery',
-      stack: 'React, Pixabay API',
+      stack: 'React, Pixabay API, Tailwind CSS',
+      desc: 'i used an API to retrieve images and implemented a pagination feature'
     },
     {
       id: 4,
@@ -108,6 +109,7 @@ const Portfolio = () => {
       link: 'https://github.com/NwobiaDavid/DailyMart',
       code: 'https://github.com/NwobiaDavid/DailyMart',
       stack: 'React, Bootstrap, Tailwind CSS, Mongo DB, Node JS, Express',
+      desc: 'an ecom store built with payment features '
     },
   ];
 
@@ -125,12 +127,13 @@ const Portfolio = () => {
         </div>
 
         <div className="grid w-full sm:grid-cols-2 md:grid-cols-2 gap-5 md:px-12 sm:px-0">
-          {portfolios.map(({ id, src, link, code, name, stack }) => (
+          {portfolios.map(({ id, src, link, code, name, stack , desc}) => (
             <PortfolioItem
               key={id}
               name={name}
               id={id}
               stack={stack}
+              desc={desc}
               src={src}
               link={link}
               code={code}
