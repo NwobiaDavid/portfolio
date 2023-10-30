@@ -4,10 +4,13 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: slateblue; 
+  background-color: black; 
   border-radius: 4px; 
 }
 
+::-webkit-scrollbar-thumb{
+  padding: 30px;
+}
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgb(42, 39, 61); 
 }

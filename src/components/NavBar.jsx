@@ -32,12 +32,9 @@ const NavBar = () => {
 
     return ( 
         
-        <div className='flex justify-between fixed items-center h-16 md:h-20 md:w-[90vw] w-screen py-1 z-10 md:rounded-full md:m-2 md:border md:border-gray-100 text-white px-4  bg-slate-900'>
-           <div>
-            <h1 className=' text-4xl md:text-5xl font-signature ml-2'>大<span className='text-red-500'>衛</span></h1>
-           </div>
+        <div className='flex w-screen md:w-fit  md:rounded-b-xl border-red-500 md:border-b-2 md:border-x-2 justify-end md:justify-center fixed items-center h-16 md:h-20 py-1 z-10 text-white px-4  bg-black '>
 
-            <ul className='hidden md:flex'>
+            <ul className='hidden md:flex p-4  '>
 
                 {Links.map(({id, link})=>(
                     <li key={id} className='px-4 cursor-pointer uppercase font-medium text-gray-500 

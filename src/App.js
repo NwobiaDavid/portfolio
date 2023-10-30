@@ -9,7 +9,16 @@ import Experience from './components/Experience';
 import './App.css';
 import Footer from './components/Footer';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function App() {
+  
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
+
   // State for loading status
   const [isLoading, setIsLoading] = useState(true);
 
